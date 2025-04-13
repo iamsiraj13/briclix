@@ -406,18 +406,6 @@ p {
   filter: brightness(0) invert(1);
 }
 
-.icon-box-primary {
-  background-color: var(--bs-primary-color);
-}
-
-.icon-box-secondary {
-  background-color: var(--bs-secondary-color);
-}
-
-.icon-box-tertiary {
-  background-color: var(--bs-tertiary-color);
-}
-
 /* Reveal image */
 .reveal {
   visibility: hidden;
@@ -538,6 +526,48 @@ p {
     font-size: 17px;
   }
 }
+/*=============================
+	01. Background CSS Start
+===============================*/
+.primary-bg {
+  background: var(--bs-primary-color);
+}
+
+/*=============================
+	01. Top Header CSS start
+===============================*/
+.ep-top-header-section {
+  padding: 10px 0;
+}
+.ep-top-header-section .contact-info {
+  gap: 52px;
+}
+.ep-top-header-section .contact-info li i {
+  font-size: 15px;
+  color: var(--bs-white-color);
+}
+.ep-top-header-section .contact-info li a {
+  color: var(--bs-white-color);
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+}
+.ep-top-header-section .contact-info li a::before {
+  width: 0%;
+  height: 1px;
+  background: var(--bs-white-color);
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  content: "";
+  opacity: 0;
+  transition: var(--bs-transition);
+}
+.ep-top-header-section .contact-info li a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
 /*=============================
 	03. Header CSS Start
 ===============================*/
