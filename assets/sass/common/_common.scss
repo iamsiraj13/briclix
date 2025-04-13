@@ -44,30 +44,26 @@
 /*=============================
 	1. Google Fonts
 ===============================*/
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
 /*=============================
 	01. Variable CSS start
 ===============================*/
 
 :root {
-  --bs-font-primary: "Inter", sans-serif;
-  --bs-font-secondary: "Space Grotesk", sans-serif;
-  --bs-font-tertiary: "Bebas Neue", sans-serif;
-  --bs-primary-color: #47b16a;
-  --bs-secondary-color: #0044eb;
+  --bs-font-primary: "Yantramanav", sans-serif;
+  --bs-primary-color: #eb5849;
+  --bs-secondary-color: #f8bc1e;
   --bs-tertiary-color: #ffbe16;
-  --bs-background-color: #f1f6fc;
+  --bs-background-color: #f5f5f5;
   --bs-white-color: #ffffff;
-  --bs-black-color: #020842;
+  --bs-black-color: #0f1b24;
   --bs-black-color2: #0f144b;
   --bs-border-color: #cccccc;
-  --bs-paragraph-color: #49515b;
+  --bs-paragraph-color: #787878;
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 28px;
-  --bs-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.05);
+  --bs-body-line-height: 150%;
+  --bs-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
   --bs-transition: all 0.3s ease-out 0s;
 }
 
@@ -89,56 +85,6 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-black-color);
   overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  font-family: var(--bs-font-secondary);
-}
-
-h1 {
-  font-size: 74px;
-  font-weight: 700;
-  line-height: 84px;
-  letter-spacing: -1.48px;
-}
-
-h2 {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 68px;
-  letter-spacing: -1.48px;
-}
-
-h3 {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 500;
-  letter-spacing: -0.64px;
-}
-
-h4 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 36px;
-}
-
-h5 {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
 }
 
 a,
@@ -173,7 +119,6 @@ p {
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-paragraph-color);
-  letter-spacing: -0.36px;
   margin: 0;
   padding: 0;
 }
@@ -194,21 +139,6 @@ p {
   background: var(--bs-primary-color);
   color: var(--bs-white-color);
   text-shadow: none;
-}
-
-.row {
-  --bs-gutter-x: 30px;
-  --bs-gutter-y: 30px;
-}
-
-.g-3,
-.gy-3 {
-  --bs-gutter-y: 1rem !important;
-}
-
-.g-2,
-.gy-2 {
-  --bs-gutter-y: 0.5rem !important;
 }
 
 /* Section title */
