@@ -3,6 +3,11 @@
 ===============================*/
 // Header section one
 .ep-header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bs-white-color);
+  z-index: 99;
   .navbar {
     .menu-right-info {
       gap: 30px;

@@ -189,59 +189,6 @@ p {
   letter-spacing: -1.48px;
 }
 
-/* Custom margin padding */
-.mt-20 {
-  margin-top: 20px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.my-30 {
-  margin: 30px 0;
-}
-
-.mt-40 {
-  margin-top: 40px;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-.mt-120 {
-  margin-top: 120px;
-}
-
-.mb-120 {
-  margin-top: 120px;
-}
-
-.pt-120 {
-  padding-top: 120px;
-}
-
-.pb-120 {
-  padding-top: 120px;
-}
-
-.my-120 {
-  margin: 120px 0;
-}
-
-.py-120 {
-  padding: 120px 0;
-}
-
 /* Custom border radious */
 .rounded-20 {
   border-radius: 20px;
@@ -413,6 +360,12 @@ p {
   background: var(--bs-background-color);
 }
 
+.bg-control {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*=============================
 	03. Button CSS Start
 ===============================*/
@@ -453,6 +406,12 @@ p {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+.theme-btn.primary {
+  color: var(--bs-white-color);
+}
+.theme-btn.primary::before {
+  background-color: var(--bs-black-color);
+}
 
 /* Theme btn */
 /*=============================
@@ -487,6 +446,89 @@ p {
 
 .icon-box-text-white img {
   filter: brightness(0) invert(1);
+}
+
+/*=============================
+	03. Heading  CSS Start
+===============================*/
+.heading-one {
+  color: var(--bs-black-color);
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+}
+
+.heading-two {
+  color: var(--bs-black-color);
+  font-size: 59.766px;
+  font-weight: 700;
+  line-height: 57.6px;
+  letter-spacing: -1.2px;
+}
+
+.heading-three {
+  color: var(--bs-black-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.heading-four {
+  color: var(--bs-black-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29.9px;
+}
+
+.heading-four {
+  color: var(--bs-black-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+}
+
+.heading-six {
+  color: var(--bs-black-color);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+}
+
+/*=============================
+	03. Spacing  CSS Start
+===============================*/
+/* Custom margin padding */
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pt-30 {
+  padding-top: 20px;
+}
+
+.py-30 {
+  padding: 30px 0;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+/*=============================
+	03. Section title  CSS Start
+===============================*/
+.section-title .sub-title {
+  color: var(--bs-primary-color);
 }
 
 /*=============================
@@ -527,6 +569,13 @@ p {
 /*=============================
 	03. Header CSS Start
 ===============================*/
+.ep-header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bs-white-color);
+  z-index: 99;
+}
 .ep-header-section .navbar .menu-right-info {
   gap: 30px;
 }
@@ -900,6 +949,103 @@ p {
 
 .social-icon {
   margin-top: 40px;
+}
+
+/*=============================
+	03. Offcanvas  CSS Start
+===============================*/
+.ep-banner-section .banner-content {
+  padding: 293px 0 160px 0;
+}
+.ep-banner-section .banner-content .sub-title {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.ep-banner-section .banner-content .profile-image {
+  position: absolute;
+  bottom: 10px;
+  left: 198px;
+}
+.ep-banner-section .banner-content .profile-image .img {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--bs-primary-color);
+  margin-left: -16px;
+}
+.ep-banner-section .banner-content .profile-image .img:first-child {
+  margin-left: 0;
+}
+.ep-banner-section .banner-content .profile-image .img img {
+  height: 100%;
+  object-fit: cover;
+}
+.ep-banner-section .banner-shadow .shadow {
+  width: 212px;
+  height: 216px;
+  border-radius: 50%;
+  background-color: var(--bs-primary-color);
+}
+.ep-banner-section .banner-shadow .shadow.shadow-1 {
+  top: 0;
+  left: 0;
+  filter: blur(152px);
+}
+.ep-banner-section .banner-shadow .shadow.shadow-2 {
+  bottom: 0;
+  right: 0;
+  filter: blur(160px);
+}
+.ep-banner-section .banner-image {
+  margin-top: 90px;
+}
+.ep-banner-section .banner-image .img {
+  position: relative;
+  right: -48px;
+  z-index: 9;
+  clip-path: polygon(calc(0% - 180px) 0, 100% 0, 100% 100%, calc(0% - 180px) 100%, 0 42%);
+  width: 966px;
+}
+.ep-banner-section .banner-image .img-shapes .shape-1 {
+  top: 0;
+  left: 97px;
+}
+.ep-banner-section .banner-image .img-shapes .shape-2 {
+  top: 162px;
+  left: 33px;
+  z-index: 9;
+}
+.ep-banner-section .banner-image .img-shapes .shape-3 {
+  bottom: 0;
+  left: 0;
+}
+.ep-banner-section .banner-image .img-shapes .shape-1,
+.ep-banner-section .banner-image .img-shapes .shape-3 {
+  z-index: 8;
+}
+
+/*=============================
+	03. Services  CSS Start
+===============================*/
+.service-item {
+  height: 400px;
+}
+.service-item .overlay {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.service-item .overlay .service-title {
+  gap: 20px;
+}
+.service-item .overlay .service-title .service-icon {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  color: var(--bs-primary-color);
+  transition: var(--bs-transition);
+}
+.service-item:hover .service-icon {
+  background-color: var(--bs-primary-color);
+  color: #fff;
 }
 
 /*=============================

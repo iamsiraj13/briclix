@@ -21,13 +21,13 @@
   //     }
   //   });
 
-  //   /* Data Background js */
-  //   $("[data-background]").each(function () {
-  //     $(this).css(
-  //       "background-image",
-  //       "url(" + $(this).attr("data-background") + ")"
-  //     );
-  //   });
+  /* Data Background js */
+  $("[data-background]").each(function () {
+    $(this).css(
+      "background-image",
+      "url(" + $(this).attr("data-background") + ")"
+    );
+  });
 
   //   // // Magnific popup js
   //   $(".parent-container").magnificPopup({
