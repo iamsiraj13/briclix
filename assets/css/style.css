@@ -412,6 +412,16 @@ p {
 .theme-btn.primary::before {
   background-color: var(--bs-black-color);
 }
+.theme-btn.transparent-btn {
+  padding: 0;
+  background-color: transparent;
+}
+.theme-btn.transparent-btn:hover {
+  color: var(--bs-primary-color);
+}
+.theme-btn.transparent-btn::before {
+  display: none;
+}
 
 /* Theme btn */
 /*=============================
@@ -508,6 +518,14 @@ p {
   padding-top: 20px;
 }
 
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
 .py-30 {
   padding: 30px 0;
 }
@@ -522,6 +540,10 @@ p {
 
 .br-20 {
   border-radius: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 /*=============================
@@ -1027,13 +1049,15 @@ p {
 	03. Services  CSS Start
 ===============================*/
 .service-item {
-  height: 400px;
+  width: 100%;
+  transition: var(--bs-transition);
 }
 .service-item .overlay {
   padding: 30px;
   background: rgba(255, 255, 255, 0.9);
 }
 .service-item .overlay .service-title {
+  border-bottom: 1px solid var(--bs-border-color);
   gap: 20px;
 }
 .service-item .overlay .service-title .service-icon {
@@ -1043,11 +1067,17 @@ p {
   color: var(--bs-primary-color);
   transition: var(--bs-transition);
 }
-.service-item:hover .service-icon {
+.service-item:hover {
+  transform: translateY(-20px);
+}
+.service-item:hover .overlay .service-icon {
   background-color: var(--bs-primary-color);
   color: #fff;
 }
 
+/*=============================
+	03. Text Slider  CSS Start
+===============================*/
 /*=============================
 	19. Footer CSS Start
 ===============================*/

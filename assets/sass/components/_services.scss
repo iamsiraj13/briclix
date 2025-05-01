@@ -1,15 +1,16 @@
 /*=============================
 	03. Services  CSS Start
 ===============================*/
-// .ep-services-section {
-// }
 
 .service-item {
-  height: 400px;
+  width: 100%;
+  transition: var(--bs-transition);
+
   .overlay {
     padding: 30px;
     background: rgba(255, 255, 255, 0.9);
     .service-title {
+      border-bottom: 1px solid var(--bs-border-color);
       gap: 20px;
       .service-icon {
         background: #fff;
@@ -21,9 +22,12 @@
     }
   }
   &:hover {
-    .service-icon {
-      background-color: var(--bs-primary-color);
-      color: #fff;
+    transform: translateY(-20px);
+    .overlay {
+      .service-icon {
+        background-color: var(--bs-primary-color);
+        color: #fff;
+      }
     }
   }
 }

@@ -9,6 +9,13 @@
     $(".offcanvas-menu, .offcanvas-overlay").removeClass("active");
   });
 
+  /* Data Background js */
+  $("[data-background]").each(function () {
+    $(this).css(
+      "background-image",
+      "url(" + $(this).attr("data-background") + ")"
+    );
+  });
   //   // fixed menu js
   //   $(window).on("scroll", function () {
   //     var scroll = $(window).scrollTop();
@@ -20,14 +27,6 @@
   //       $("#header-fixed-height").addClass("active-height");
   //     }
   //   });
-
-  /* Data Background js */
-  $("[data-background]").each(function () {
-    $(this).css(
-      "background-image",
-      "url(" + $(this).attr("data-background") + ")"
-    );
-  });
 
   //   // // Magnific popup js
   //   $(".parent-container").magnificPopup({
